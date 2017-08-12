@@ -1,6 +1,6 @@
 {
-  "name": "erector-node-utils",
-  "version": "1.0.0-beta",
+  "name": "erector",
+  "version": "1.0.0-beta.1",
   "description": "Erector node utils",
   "main": "index.js",
   "scripts": {

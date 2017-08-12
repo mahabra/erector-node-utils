@@ -25,12 +25,13 @@ module.exports = function resolveModuleLocation(moduleName, cwd) {
         for (let i = 0; i < dirs.length; i++) {
           const resourceName = path.join(dirs[i], moduleName);
           const indexFilename = path.join(resourceName, 'index');
-          const existenFilename = getFileWithExtensions(isDirSync(dirname) ? indexFilename : resourceName, ['.js', '.es', '.coffee', '.ts']);
+          const existenFilename = getFileWithExtensions(isDirSync(resourceName) ? indexFilename : resourceName, ['.js', '.es', '.coffee', '.ts']);
           return existenFilename ? existenFilename : Promise.reject();
         }
         return Promise.reject();
       })
-      .catch(function() {
+      .catch(function(e) {
+        console.log('What', e.message);
         const location = resolvePackage(moduleName);
         if (location instanceof Error) {
           return location.message;
