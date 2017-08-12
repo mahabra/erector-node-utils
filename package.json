@@ -14,5 +14,10 @@
     "erector"
   ],
   "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
-  "license": "BSD-2-Clause"
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "find-parent-dir": "^0.3.0",
+    "lodash": "^4.17.4",
+    "requireg": "^0.1.7"
+  }
 }
