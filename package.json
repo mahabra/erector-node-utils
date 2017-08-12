@@ -1,5 +1,5 @@
 {
-  "name": "erector",
+  "name": "erector-node-utils",
   "version": "1.0.0-beta.2",
   "description": "Erector node utils",
   "main": "index.js",
