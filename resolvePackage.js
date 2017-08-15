@@ -2,8 +2,8 @@
 const path = require('path');
 const requireg = require('requireg');
 const npmErectModuleExpr = /^erector-[a-z0-9\-_]+$/i;
-const isFunction = require('lodash/isFunction');
-const isPlainObject = require('lodash/isPlainObject');
+const isFunction = require('./helpers/isFunction');
+const isPlainObject = require('./helpers/isPlainObject');
 
 
 /**

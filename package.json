@@ -1,6 +1,6 @@
 {
   "name": "erector-node-utils",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.4",
   "description": "Erector node utils",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,6 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "find-parent-dir": "^0.3.0",
-    "lodash": "^4.17.4",
     "requireg": "^0.1.7"
   }
 }
